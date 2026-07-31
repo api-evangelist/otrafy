@@ -1,7 +1,26 @@
 aid: otrafy
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/otrafy.png
 name: Otrafy
-description: Otrafy is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Otrafy is an AI-powered supplier management platform that automates regulatory compliance, supplier
+  data collection, and supply chain risk assessment for QA, R&D, Regulatory, and Procurement teams at
+  enterprise clients. The platform uses natural language processing to automate supplier data collection
+  (citing high supplier response rates), monitors suppliers in real time against regulatory standards such
+  as FDA, EU MRLs, California Prop 65, and PFAS, and applies AI-driven risk scoring to suppliers and
+  facilities to streamline buyer-supplier collaboration. Otrafy is a Techstars portfolio company. As of
+  this enrichment pass the company publishes a marketing website and product/contact pages but no public
+  developer portal, API documentation, or machine-readable API surface.
 url: https://raw.githubusercontent.com/api-evangelist/otrafy/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Supplier Management
+- Supply Chain
+- Regulatory Compliance
+- Risk Management
+- Food Safety
+- Artificial Intelligence
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/otrafy-domain-security.yml
 - type: Website
   url: https://otrafy.com/
+- type: Support
+  url: https://otrafy.com/contact
+- type: Features
+  url: https://otrafy.com/features
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
